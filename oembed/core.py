@@ -1,5 +1,6 @@
 import re
 import urllib2
+import HTMLParser
 import gzip
 from heapq import heappush, heappop
 try:
@@ -63,10 +64,10 @@ def re_parts(regex_list, text):
         return x.start() - y.start()
     prev_end = 0
     iter_dict = dict((r, r.finditer(text)) for r in regex_list)
-    
+
     # a heapq containing matches
     matches = []
-    
+
     # bootstrap the search with the first hit for each iterator
     for regex, iterator in iter_dict.items():
         try:
@@ -74,7 +75,7 @@ def re_parts(regex_list, text):
             heappush(matches, (match.start(), match))
         except StopIteration:
             iter_dict.pop(regex)
-    
+
     # process matches, revisiting each iterator from which a match is used
     while matches:
         # get the earliest match
@@ -103,12 +104,12 @@ def replace(text, max_width=MAX_WIDTH, max_height=MAX_HEIGHT):
     """
     Scans a block of text, replacing anything matched by a ``ProviderRule``
     pattern with an OEmbed html snippet, if possible.
-    
+
     Templates should be stored at oembed/{format}.html, so for example:
-        
+
         oembed/video.html
-        
-    These templates are passed a context variable, ``response``, which is a 
+
+    These templates are passed a context variable, ``response``, which is a
     dictionary representation of the response.
     """
     rules = list(ProviderRule.objects.all())
@@ -138,7 +139,7 @@ def replace(text, max_width=MAX_WIDTH, max_height=MAX_HEIGHT):
             if to_append:
                 parts.append(to_append)
                 index += 1
-    # Now we fetch a list of all stored patterns, and put it in a dictionary 
+    # Now we fetch a list of all stored patterns, and put it in a dictionary
     # mapping the URL to to the stored model instance.
     for stored_embed in StoredOEmbed.objects.filter(match__in=urls, max_width=max_width, max_height = max_height):
         stored[stored_embed.match] = stored_embed
@@ -153,6 +154,11 @@ def replace(text, max_width=MAX_WIDTH, max_height=MAX_HEIGHT):
         except KeyError:
             try:
                 # Build the URL based on the properties defined in the OEmbed spec.
+                # Django's default template behavior is to escape ampersands
+                # We unescape them so the lookups work without
+                # having to mark the URL content as safe in the template
+                h = HTMLParser.HTMLParser()
+                part = h.unescape(part)
                 sep = "?" in rule.endpoint and "&" or "?"
                 q = urlencode({"url": part,
                                "maxwidth": max_width,
