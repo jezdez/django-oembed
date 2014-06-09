@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*?flickr.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*?flickr.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://www.flickr.com/services/oembed/",
             "name": "Flickr",
             "format": 1
@@ -13,7 +13,7 @@
         "pk": 2,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*?viddler.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*?viddler.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://lab.viddler.com/services/oembed/",
             "name": "Viddler",
             "format": 1
@@ -23,7 +23,7 @@
         "pk": 3,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://qik.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://qik.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://qik.com/api/oembed.json",
             "name": "Qik",
             "format": 1
@@ -33,7 +33,7 @@
         "pk": 4,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*?pownce.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*?pownce.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.pownce.com/2.1/oembed.json",
             "name": "Pownce",
             "format": 1
@@ -43,7 +43,7 @@
         "pk": 5,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*?revision3.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*?revision3.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://revision3.com/api/oembed/",
             "name": "Revision3",
             "format": 1
@@ -53,7 +53,7 @@
         "pk": 6,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*.collegehumor.com/video:[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*.collegehumor.com/video:[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://oohembed.com/oohembed/",
             "name": "CollegeHumor Video (OohEmbed)",
             "format": 1
@@ -63,7 +63,7 @@
         "pk": 7,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*.funnyordie.com/videos/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*.funnyordie.com/videos/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://oohembed.com/oohembed/",
             "name": "Funny or Die Video (OohEmbed)",
             "format": 1
@@ -73,7 +73,7 @@
         "pk": 8,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://video.google.com/videoplay?[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://video.google.com/videoplay?[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://oohembed.com/oohembed/",
             "name": "Google Video (OohEmbed)",
             "format": 1
@@ -83,7 +83,7 @@
         "pk": 9,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.hulu.com/watch/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.hulu.com/watch/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://oohembed.com/oohembed/",
             "name": "Hulu (OohEmbed)",
             "format": 1
@@ -93,7 +93,7 @@
         "pk": 10,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*.metacafe.com/watch/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*.metacafe.com/watch/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://oohembed.com/oohembed/",
             "name": "Metacafe (OohEmbed)",
             "format": 1
@@ -113,7 +113,7 @@
         "pk": 12,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*.wikipedia.org/wiki/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*.wikipedia.org/wiki/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://oohembed.com/oohembed/",
             "name": "Wikipedia (OohEmbed)",
             "format": 1
@@ -123,7 +123,7 @@
         "pk": 13,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://\\S*.?youtube.com/watch[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://youtu.be/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://\\S*.?youtube.com/watch[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://youtu.be/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://www.youtube.com/oembed",
             "name": "YouTube",
             "format": 1
@@ -143,7 +143,7 @@
         "pk": 15,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.slideshare.net/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.slideshare.net/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "SlideShare (Embedly)",
             "format": 1
@@ -153,7 +153,7 @@
         "pk": 16,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*.scribd.com/doc/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*.scribd.com/doc/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Scribd (Embedly)",
             "format": 1
@@ -163,7 +163,7 @@
         "pk": 17,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://screenr.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://screenr.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Screenr (Embedly)",
             "format": 1
@@ -173,7 +173,7 @@
         "pk": 18,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.5min.com/Video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.5min.com/Video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "5min (Embedly)",
             "format": 1
@@ -183,7 +183,7 @@
         "pk": 19,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.howcast.com/videos/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.howcast.com/videos/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Howcast (Embedly)",
             "format": 1
@@ -193,7 +193,7 @@
         "pk": 20,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://\\S*?screencast.com/\\S*/media/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*?screencast.com/t/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://\\S*?screencast.com/\\S*/media/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*?screencast.com/t/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Screencast (Embedly)",
             "format": 1
@@ -203,7 +203,7 @@
         "pk": 21,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.clearspring.com/widgets/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.clearspring.com/widgets/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Clearspring (Embedly)",
             "format": 1
@@ -213,7 +213,7 @@
         "pk": 22,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://my.opera.com/\\S*/albums/show.dml\\?id=[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://my.opera.com/\\S*/albums/showpic.dml\\?album=\\S*&picture=[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://my.opera.com/\\S*/albums/show.dml\\?id=[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://my.opera.com/\\S*/albums/showpic.dml\\?album=\\S*&picture=[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "My Opera (Embedly)",
             "format": 1
@@ -223,7 +223,7 @@
         "pk": 23,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*yfrog.\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*yfrog.\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Yfrog (Embedly)",
             "format": 1
@@ -233,7 +233,7 @@
         "pk": 24,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://tweetphoto.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://tweetphoto.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "TweetPhoto (Embedly)",
             "format": 1
@@ -243,7 +243,7 @@
         "pk": 25,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*twitpic.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*twitpic.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "TwitPic (Embedly)",
             "format": 1
@@ -253,7 +253,7 @@
         "pk": 26,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*imgur.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*imgur.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Imgur (Embedly)",
             "format": 1
@@ -263,7 +263,7 @@
         "pk": 27,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://twitgoo.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://twitgoo.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "TwitGoo (Embedly)",
             "format": 1
@@ -273,7 +273,7 @@
         "pk": 28,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://i\\S*.photobucket.com/albums/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://gi\\S*.photobucket.com/groups/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://i\\S*.photobucket.com/albums/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://gi\\S*.photobucket.com/groups/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Photobucket (Embedly)",
             "format": 1
@@ -283,7 +283,7 @@
         "pk": 29,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://phodroid.com/\\S*/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://phodroid.com/\\S*/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Phodroid (Embedly)",
             "format": 1
@@ -293,7 +293,7 @@
         "pk": 30,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://xkcd.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://xkcd.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "xkcd (Embedly)",
             "format": 1
@@ -303,7 +303,7 @@
         "pk": 31,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*?23hq.com/\\S*/photo/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*?23hq.com/\\S*/photo/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "23 HQ (Embedly)",
             "format": 1
@@ -313,7 +313,7 @@
         "pk": 32,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://\\S*amazon.\\S*/gp/product/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*amazon.\\S*/\\S*/dp/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*amazon.\\S*/dp/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*amazon.\\S*/o/ASIN/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*amazon.\\S*/gp/offer-listing/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*amazon.\\S*/\\S*/ASIN/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*amazon.\\S*/gp/product/images/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://\\S*amazon.\\S*/gp/product/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*amazon.\\S*/\\S*/dp/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*amazon.\\S*/dp/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*amazon.\\S*/o/ASIN/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*amazon.\\S*/gp/offer-listing/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*amazon.\\S*/\\S*/ASIN/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*amazon.\\S*/gp/product/images/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Amazon (Embedly)",
             "format": 1
@@ -323,7 +323,7 @@
         "pk": 33,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.veoh.com/\\S*/watch/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.veoh.com/\\S*/watch/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Veoh (Embedly)",
             "format": 1
@@ -333,7 +333,7 @@
         "pk": 34,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*justin.tv/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*justin.tv/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Justin.tv (Embedly)",
             "format": 1
@@ -343,7 +343,7 @@
         "pk": 35,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.ustream.tv/(recorded|channel)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.ustream.tv/(recorded|channel)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "UStream (Embedly)",
             "format": 1
@@ -353,7 +353,7 @@
         "pk": 36,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://\\S*.dailymotion.com/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://\\S*.dailymotion.com/\\S*/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://\\S*.dailymotion.com/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://\\S*.dailymotion.com/\\S*/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Daily Motion (Embedly)",
             "format": 1
@@ -363,7 +363,7 @@
         "pk": 37,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.twitvid.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.twitvid.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "TwitVid (Embedly)",
             "format": 1
@@ -373,7 +373,7 @@
         "pk": 38,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.break.com/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.break.com/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Break.com (Embedly)",
             "format": 1
@@ -383,7 +383,7 @@
         "pk": 39,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://(www|vids).myspace.com/index.cfm\\?fuseaction=\\S*&videoid[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://(www|vids).myspace.com/index.cfm\\?fuseaction=\\S*&videoid[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Myspace Videos (Embedly)",
             "format": 1
@@ -393,7 +393,7 @@
         "pk": 40,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*blip.tv/file/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*blip.tv/file/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://blip.tv/oembed",
             "name": "Blip.tv",
             "format": 1
@@ -403,7 +403,7 @@
         "pk": 41,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*revver.com/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*revver.com/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Revver (Embedly)",
             "format": 1
@@ -413,7 +413,7 @@
         "pk": 42,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://video.yahoo.com/watch/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://video.yahoo.com/network/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://video.yahoo.com/watch/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://video.yahoo.com/network/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Yahoo! Video (Embedly)",
             "format": 1
@@ -423,7 +423,7 @@
         "pk": 43,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*?liveleak.com/view?[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*?liveleak.com/view?[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "LiveLeak (Embedly)",
             "format": 1
@@ -433,7 +433,7 @@
         "pk": 44,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://animoto.com/(play|s)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://animoto.com/(play|s)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Animoto (Embedly)",
             "format": 1
@@ -443,7 +443,7 @@
         "pk": 45,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://dotsub.com/view/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://dotsub.com/view/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "dotSUB (Embedly)",
             "format": 1
@@ -453,7 +453,7 @@
         "pk": 46,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://soundcloud.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://soundcloud.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "SoundCloud (Embedly)",
             "format": 1
@@ -463,7 +463,7 @@
         "pk": 47,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.lala.com/#*(album|song)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.lala.com/#*(album|song)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Lala (Embedly)",
             "format": 1
@@ -473,7 +473,7 @@
         "pk": 48,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://movieclips.com/watch/\\S*/\\S*/|http://movieclips.com/watch/\\S*/\\S*/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://movieclips.com/watch/\\S*/\\S*/|https?://movieclips.com/watch/\\S*/\\S*/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Movie Clips (Embedly)",
             "format": 1
@@ -483,7 +483,7 @@
         "pk": 49,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*crackle.com/c/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*crackle.com/c/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Crackle (Embedly)",
             "format": 1
@@ -493,7 +493,7 @@
         "pk": 50,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.fancast.com/\\S*/videos",
+            "regex": "https?://www.fancast.com/\\S*/videos",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Fancast (Embedly)",
             "format": 1
@@ -503,7 +503,7 @@
         "pk": 51,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.ted.com/talks/\\S*.html",
+            "regex": "https?://www.ted.com/talks/\\S*.html",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "TED (Embedly)",
             "format": 1
@@ -513,7 +513,7 @@
         "pk": 52,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*omnisio.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*omnisio.com/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Omnisio (Embedly)",
             "format": 1
@@ -523,7 +523,7 @@
         "pk": 53,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*nfb.ca/film/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*nfb.ca/film/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "NFB (Embedly)",
             "format": 1
@@ -533,7 +533,7 @@
         "pk": 54,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "(http://www.thedailyshow.com/(watch|full-episodes)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|http://www.thedailyshow.com/collection/\\S*/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
+            "regex": "(https?://www.thedailyshow.com/(watch|full-episodes)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*|https?://www.thedailyshow.com/collection/\\S*/\\S*/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*)",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "The Daily Show (Embedly)",
             "format": 1
@@ -543,7 +543,7 @@
         "pk": 55,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://movies.yahoo.com/movie/\\S*/(video|info|trailer)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://movies.yahoo.com/movie/\\S*/(video|info|trailer)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Yahoo! Movies",
             "format": 1
@@ -553,7 +553,7 @@
         "pk": 56,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.colbertnation.com/(the-colbert-report-collections|full-episodes|the-colbert-report-videos)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.colbertnation.com/(the-colbert-report-collections|full-episodes|the-colbert-report-videos)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Colbert Nation (Embedly)",
             "format": 1
@@ -563,7 +563,7 @@
         "pk": 57,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.comedycentral.com/videos/index.jhtml?[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.comedycentral.com/videos/index.jhtml?[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Comedy Central (Embedly)",
             "format": 1
@@ -573,7 +573,7 @@
         "pk": 58,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://\\S*theonion.com/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://\\S*theonion.com/video/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "The Onion (Embedly)",
             "format": 1
@@ -583,7 +583,7 @@
         "pk": 59,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://wordpress.tv/\\S*/\\S*/\\S*/\\S*/",
+            "regex": "https?://wordpress.tv/\\S*/\\S*/\\S*/\\S*/",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "WordPress TV (Embedly)",
             "format": 1
@@ -593,7 +593,7 @@
         "pk": 60,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.traileraddict.com/(trailer|clip|poster)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.traileraddict.com/(trailer|clip|poster)/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "Trailer Addict (Embedly)",
             "format": 1
@@ -603,7 +603,7 @@
         "pk": 61,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://www.escapistmagazine.com/videos/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://www.escapistmagazine.com/videos/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://api.embed.ly/v1/api/oembed",
             "name": "The Escapist (Embedly)",
             "format": 1
@@ -613,7 +613,7 @@
         "pk": 62,
         "model": "oembed.providerrule",
         "fields": {
-            "regex": "http://official\\.fm/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
+            "regex": "https?://official\\.fm/[\\w\\-\\.~%/\\?#@!$&'\\(\\)\\*\\+,;=]*",
             "endpoint": "http://official.fm/services/oembed",
             "name": "official.fm",
             "format": 1
