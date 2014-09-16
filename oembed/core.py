@@ -120,7 +120,7 @@ def build_url(endpoint, url, max_width, max_height):
         'format': FORMAT,
         })
     # Put the URL back together with the new params and return it
-    params = urlencode(params)
+    params = urlencode(params, doseq=1)
     return urlparse.urlunsplit(split_url[:3] + (params,) + split_url[4:])
 
 def fetch_dict(url, max_width=None, max_height=None):
