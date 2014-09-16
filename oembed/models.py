@@ -4,7 +4,10 @@ try:
     import json
 except ImportError:
     from django.utils import simplejson as json
-from django.utils.timezone import now
+try:
+    from django.utils.timezone import now
+except ImportError
+    now = datetime.datetime.now
 from django.utils.translation import ugettext_lazy as _
 
 JSON = 1
