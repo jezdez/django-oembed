@@ -6,7 +6,7 @@ except ImportError:
     from django.utils import simplejson as json
 try:
     from django.utils.timezone import now
-except ImportError
+except ImportError:
     now = datetime.datetime.now
 from django.utils.translation import ugettext_lazy as _
 
