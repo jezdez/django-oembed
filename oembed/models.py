@@ -1,6 +1,6 @@
 import datetime
+import json
 from django.db import models
-from django.utils import simplejson
 from django.utils.translation import ugettext_lazy as _
 
 JSON = 1
@@ -37,4 +37,4 @@ class StoredOEmbed(models.Model):
 
     def get_json(self, name):
         """ Convenience for JSON properties; e.g. get_json('thumbnail_url') """
-        return simplejson.loads(self.json).get(name, None)
+        return json.loads(self.json).get(name, None)
