@@ -5,6 +5,10 @@ import re
 import urllib2
 import urlparse
 try:
+    import json
+except ImportError:
+    from django.utils import simplejson as json
+try:
     from urlparse import parse_qs
 except ImportError:
     # (copied to urlparse from cgi in 2.6)
@@ -17,10 +21,6 @@ except ImportError:
 
 from django.conf import settings
 from django.utils.http import urlencode
-try:
-    import json
-except ImportError:
-    from django.utils import simplejson as json
 from django.utils.safestring import mark_safe
 from django.template.loader import render_to_string
 

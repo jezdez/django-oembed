@@ -1,9 +1,9 @@
 import datetime
-from django.db import models
 try:
     import json
 except ImportError:
     from django.utils import simplejson as json
+from django.db import models
 from django.utils.timezone import now
 from django.utils.translation import ugettext_lazy as _
 
