@@ -1,1 +1,5 @@
-{% autoescape off %}{{ response.html }}{% endautoescape %}
+{% load oembed_tags %}
+<div class="oembed-link">
+    <div class="oembed-link-object">{{ response.html|unescape|safe }}</div>
+    <div class="oembed-link-url"><a href="{{ match }}">{% if response.title %}{{ response.title|urlunquote_plus }}{% else %}{{ match|urlunquote_plus }}{% endif %}</a></div>
+</div>

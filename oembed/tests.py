@@ -17,7 +17,6 @@ class OEmbedTests(TestCase):
             u"http://www.howcast.com/videos/328008-How-To-Marble-Easter-Eggs",
             u"http://my.opera.com/nirvanka/albums/showpic.dml?album=519866&picture=7173711",
             u"http://img20.yfrog.com/i/dy6.jpg/",
-            u"http://tweetphoto.com/8069529",
             u"http://www.flickr.com/photos/jaimewalsh/4489497178/",
             u"http://twitpic.com/1cm8us",
             u"http://imgur.com/6pLoN",
